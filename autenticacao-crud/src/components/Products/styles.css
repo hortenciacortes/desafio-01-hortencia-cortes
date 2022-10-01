@@ -1,0 +1,39 @@
+.contain-newProducts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #61dafb0a;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 1px 1px 1px#61dafbb9;
+  text-align: start;
+  margin: 20px;
+}
+
+.contain-form {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contain-form label.form-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  white-space: nowrap;
+  gap: 10px;
+}
+
+.contain-form label input {
+  width: 100%;
+}
+
+.contain-form label.form-info.perishabl input {
+  width: auto;
+}
+
+.contain-form button {
+  width: 100%;
+}

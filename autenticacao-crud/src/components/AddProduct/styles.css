@@ -1,0 +1,38 @@
+.contain-products .card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #61dafb0a;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 1px 1px 1px#61dafbb9;
+  text-align: start;
+  margin: 20px;
+}
+
+.contain-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card .item p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card .item img {
+  width: 400px;
+  height: 200px;
+}
+
+.card .icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 8px;
+}
+
+svg {
+  cursor: pointer;
+}

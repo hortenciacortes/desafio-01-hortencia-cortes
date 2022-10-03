@@ -33,6 +33,6 @@
   gap: 8px;
 }
 
-svg {
+.card .icons svg {
   cursor: pointer;
 }

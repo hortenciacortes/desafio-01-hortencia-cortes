@@ -1,9 +1,9 @@
 {
   "products": [
     {
-      "name": "produto",
+      "name": "produto789",
       "manufacturingDate": "2022-10-01",
-      "perishableProduct": true,
+      "perishableProduct": false,
       "expirationDate": "2022-10-08",
       "price": "R$ 23,443",
       "id": 1
@@ -31,6 +31,158 @@
       "expirationDate": "2022-10-15",
       "price": "R$ 1.232,3",
       "id": 4
+    },
+    {
+      "name": "produto123",
+      "manufacturingDate": "2022-10-01",
+      "perishableProduct": false,
+      "expirationDate": "",
+      "price": "R$ 15,000",
+      "id": 5
+    },
+    {
+      "name": "teste1",
+      "manufacturingDate": "2022-10-03",
+      "perishableProduct": true,
+      "expirationDate": "2022-10-05",
+      "price": "R$ 44,444",
+      "id": 6
+    },
+    {
+      "name": "teste2",
+      "manufacturingDate": "2022-10-03",
+      "perishableProduct": true,
+      "expirationDate": "2022-10-05",
+      "price": "R$ 44,444",
+      "id": 7
+    },
+    {
+      "name": "teste3",
+      "manufacturingDate": "2022-10-03",
+      "perishableProduct": true,
+      "expirationDate": "2022-10-05",
+      "price": "R$ 44,444",
+      "id": 8
+    },
+    {
+      "name": "teste4",
+      "manufacturingDate": "2022-10-03",
+      "perishableProduct": true,
+      "expirationDate": "2022-10-05",
+      "price": "R$ 44,444",
+      "id": 9
+    },
+    {
+      "name": "teste5",
+      "manufacturingDate": "2022-10-03",
+      "perishableProduct": true,
+      "expirationDate": "2022-10-05",
+      "price": "R$ 44,444",
+      "id": 10
+    },
+    {
+      "name": "teste6",
+      "manufacturingDate": "2022-10-03",
+      "perishableProduct": true,
+      "expirationDate": "2022-10-05",
+      "price": "R$ 44,444",
+      "id": 11
+    },
+    {
+      "name": "teste7",
+      "manufacturingDate": "2022-10-03",
+      "perishableProduct": true,
+      "expirationDate": "2022-10-05",
+      "price": "R$ 44,444",
+      "id": 12
+    },
+    {
+      "name": "teste8",
+      "manufacturingDate": "2022-10-03",
+      "perishableProduct": true,
+      "expirationDate": "2022-10-05",
+      "price": "R$ 44,444",
+      "id": 13
+    },
+    {
+      "name": "sensor1",
+      "manufacturingDate": "2022-10-14",
+      "perishableProduct": false,
+      "expirationDate": "",
+      "price": "R$ 46,852",
+      "id": 14
+    },
+    {
+      "name": "sensor2",
+      "manufacturingDate": "2022-10-14",
+      "perishableProduct": false,
+      "expirationDate": "",
+      "price": "R$ 46,852",
+      "id": 15
+    },
+    {
+      "name": "sensor3",
+      "manufacturingDate": "2022-10-14",
+      "perishableProduct": false,
+      "expirationDate": "",
+      "price": "R$ 46,852",
+      "id": 16
+    },
+    {
+      "name": "sensor4",
+      "manufacturingDate": "2022-10-14",
+      "perishableProduct": false,
+      "expirationDate": "",
+      "price": "R$ 46,852",
+      "id": 17
+    },
+    {
+      "name": "product1",
+      "manufacturingDate": "2022-10-06",
+      "perishableProduct": false,
+      "expirationDate": "",
+      "price": "R$ 45,287",
+      "id": 18
+    },
+    {
+      "name": "product1",
+      "manufacturingDate": "2022-10-06",
+      "perishableProduct": false,
+      "expirationDate": "",
+      "price": "R$ 45,287",
+      "id": 19
+    },
+    {
+      "name": "product1",
+      "manufacturingDate": "2022-10-06",
+      "perishableProduct": false,
+      "expirationDate": "",
+      "price": "R$ 45,287",
+      "id": 20
+    },
+    {
+      "name": "product1",
+      "manufacturingDate": "2022-10-06",
+      "perishableProduct": false,
+      "expirationDate": "",
+      "price": "R$ 45,287",
+      "id": 21
+    },
+    {
+      "name": "product1",
+      "manufacturingDate": "2022-10-06",
+      "perishableProduct": false,
+      "expirationDate": "",
+      "price": "R$ 45,287",
+      "id": 22
+    },
+    {
+      "name": "product1",
+      "manufacturingDate": "2022-10-06",
+      "perishableProduct": false,
+      "expirationDate": "",
+      "price": "R$ 45,287",
+      "id": 23
     }
   ]
 }

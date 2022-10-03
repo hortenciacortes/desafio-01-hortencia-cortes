@@ -37,3 +37,12 @@
 .contain-form button {
   width: 100%;
 }
+
+.contain-products .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / 3;
+  gap: 40px;
+  margin-top: 30px;
+}

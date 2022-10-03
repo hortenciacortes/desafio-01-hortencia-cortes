@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { PencilLine, Trash, Warning } from 'phosphor-react';
+import { ArrowCircleLeft, ArrowCircleRight, PencilLine, Trash, Warning } from 'phosphor-react';
 
 import { masks } from '../../utils';
 import { deleteProduct } from '../../store/products';
@@ -10,12 +10,13 @@ import './styles.css'
 
 export function Products() {
   const dispatch = useDispatch();
-  const products = useSelector(state => state.products);
   const navigate = useNavigate()
-
+  const products = useSelector(state => state.products);
+  const productsCount = useSelector(state => state.productsCount);
+  const [page, setPage] = useState(1);
   useEffect(() => {
-    dispatch(getProducts())
-  }, []);
+    dispatch(getProducts(page));
+  }, [page]);
   
   return (
     <div className="contain-products">
@@ -49,6 +50,16 @@ export function Products() {
             </div>
           </div>
         ))}
+        <div className="icons">
+          {page <= 1 ?
+            <ArrowCircleLeft size={40} color="#a1a5a75e" weight="bold" cursor="default" /> :
+            <ArrowCircleLeft size={40} color="#04a0d9" weight="bold" cursor="pointer" onClick={e => setPage(page - 1)}/>
+          }
+          {page >= productsCount ?
+            <ArrowCircleRight size={40} color="#a1a5a75e" weight="bold" /> :
+            <ArrowCircleRight size={40} color="#04a0d9" weight="bold" cursor="pointer" onClick={e => setPage(page + 1)} />
+          }
+        </div>
       </div>
     </div>
   )

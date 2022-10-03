@@ -15,7 +15,7 @@
 ### 💻 Sobre o Projeto<a id="sobre-projeto"></a>
 
  1. A página inicial do projeto em uma tela de login, porém  a autenticação não foi feita, ao apertar em entrar é enviado para a página com os produtos cadastrados.
- 2. A página mostra uma lista com todos os produtos cadastrados, mas sem a possibilidade de ordenação dos campos e sem a paginação de 10 produtos por página. 
+ 2. A página mostra uma lista com todos os produtos cadastrados e com a paginação de 10 produtos por página, mas sem a possibilidade de ordenação dos campos. 
  3. Na página de produtos, cada produto tem um ícone para editar e excluir e um botão para adicionar um novo produto contendo todos os campos solicitados (Nome; Data de fabricação; Produto perecível (booleano); Data de validade; Preço;)
  4. O botão de para cadastrar leva até a página de cadastro
 	- [x] o usuário só poderá cadastrar data de validade caso o produto esteja marcado como perecível (input radio)

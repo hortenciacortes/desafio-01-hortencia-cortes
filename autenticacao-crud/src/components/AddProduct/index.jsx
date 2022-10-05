@@ -90,7 +90,7 @@ export function AddProduct() {
                 id="true" name="perishabl" value="true"
                 checked={form.perishableProduct ? true : false}
                 onChange={e => setForm(prevent => {
-                  return {...prevent, perishableProduct: e.target.value === 'true' ? true : false}
+                  return {...prevent, perishableProduct: true}
                 })}
               />
               Sim
@@ -101,7 +101,7 @@ export function AddProduct() {
                 id="false" name="perishabl" value="false"                
                 checked={form.perishableProduct ? false : true}
                 onChange={e => setForm(prevent => {
-                  return {...prevent, perishableProduct: e.target.value === 'false' ? false : true}
+                  return {...prevent, perishableProduct: false, expirationDate: ''}
                 })}
               />
               Não
@@ -130,8 +130,12 @@ export function AddProduct() {
             })}
           />
         </label>
- 
-        <button onClick={handleAddProduct}>Adicionar</button>
+        
+        <div className="buttons">
+          <button onClick={e => navigate('/products')}>Voltar</button>
+          <button onClick={handleAddProduct}>Adicionar</button>
+
+        </div>
       </div>
     </div>
   )

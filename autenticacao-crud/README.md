@@ -15,9 +15,9 @@
 ### 💻 Sobre o Projeto<a id="sobre-projeto"></a>
 
  1. A página inicial do projeto em uma tela de login, porém  a autenticação não foi feita, ao apertar em entrar é enviado para a página com os produtos cadastrados.
- 2. A página mostra uma lista com todos os produtos cadastrados e com a paginação de 10 produtos por página, mas sem a possibilidade de ordenação dos campos. 
+ 2. A página mostra uma lista com todos os produtos cadastrados, possibilidade de ordenação dos campos de nome, data de fabricação, data de validade e produtos perecíveis e com uma paginação de 10 produtos por página.
  3. Na página de produtos, cada produto tem um ícone para editar e excluir e um botão para adicionar um novo produto contendo todos os campos solicitados (Nome; Data de fabricação; Produto perecível (booleano); Data de validade; Preço;)
- 4. O botão de para cadastrar leva até a página de cadastro
+ 4. O botão 'cadastrar' leva até a página de cadastro
 	- [x] o usuário só poderá cadastrar data de validade caso o produto esteja marcado como perecível (input radio)
 	- [x] a data de fabricação nunca deverá ser maior que a data de validade, mostrando um alert caso seja
 	- [x] o preço está estar em reais (R$)

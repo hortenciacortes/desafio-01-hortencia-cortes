@@ -13,17 +13,34 @@ export function Products() {
   const navigate = useNavigate()
   const products = useSelector(state => state.products);
   const productsCount = useSelector(state => state.productsCount);
-  const [page, setPage] = useState(1);
+  const [order, setOrder] = useState({page: 1, value:''});  
+  
   useEffect(() => {
-    dispatch(getProducts(page));
-  }, [page]);
+    dispatch(getProducts(order.page, order.value));
+  }, [order]);
+  
+  function handleSelect({ target }) {
+    setOrder(prevent => { return {...prevent, value: target.value}});
+  }
   
   return (
     <div className="contain-products">
       <h1>Produtos</h1>
-      <Link to="/addProduct">
-        <button>Cadastrar</button>
-      </Link>
+      <div className="contain-buttons">
+        <Link to="/addProduct">
+          <button>Cadastrar</button>
+        </Link>
+        <label>
+          Filtrar por:
+          <select name="filter" id="filter" value={order.value} onChange={handleSelect}>
+            <option value="" disabled></option>
+            <option value="name">Nome do produto</option>
+            <option value="manufacturingDate">Data de fabricação</option>
+            <option value="expirationDate">Data de validade</option>
+            <option value="perishableProduct">Produto perecível</option>
+          </select>
+        </label>
+      </div>
       <div className="contain-cards">
         {products.map(item => (
           <div key={item.id} className="card">
@@ -50,14 +67,24 @@ export function Products() {
             </div>
           </div>
         ))}
-        <div className="icons">
-          {page <= 1 ?
+        <div className="icons arrows">
+          {order.page <= 1 ?
             <ArrowCircleLeft size={40} color="#a1a5a75e" weight="bold" cursor="default" /> :
-            <ArrowCircleLeft size={40} color="#04a0d9" weight="bold" cursor="pointer" onClick={e => setPage(page - 1)}/>
+            <ArrowCircleLeft 
+              size={40} color="#04a0d9" weight="bold" cursor="pointer" 
+              onClick={ e => setOrder(prevent => {
+                return {...prevent, page: order.page - 1}
+              })}
+            />
           }
-          {page >= productsCount ?
+          {order.page >= productsCount ?
             <ArrowCircleRight size={40} color="#a1a5a75e" weight="bold" /> :
-            <ArrowCircleRight size={40} color="#04a0d9" weight="bold" cursor="pointer" onClick={e => setPage(page + 1)} />
+            <ArrowCircleRight 
+              size={40} color="#04a0d9" weight="bold" cursor="pointer" 
+              onClick={ e => setOrder(prevent => { 
+                return {...prevent, page: order.page + 1}
+              })}
+            />
           }
         </div>
       </div>

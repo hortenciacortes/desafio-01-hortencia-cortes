@@ -1,5 +1,6 @@
-.contain-products .card {
+.contain-newProducts {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   background-color: #61dafb0a;
   border-radius: 8px;
@@ -9,30 +10,42 @@
   margin: 20px;
 }
 
-.contain-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.card .item p {
+.contain-form {
   display: flex;
-  align-items: center;
-  gap: 6px;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.card .item img {
-  width: 400px;
-  height: 200px;
-}
-
-.card .icons {
+.contain-form label.form-info {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: end;
-  gap: 8px;
+  font-size: 20px;
+  white-space: nowrap;
+  gap: 10px;
 }
 
-.card .icons svg {
-  cursor: pointer;
+.contain-form label input {
+  width: 100%;
+}
+
+.contain-form label.form-info.perishabl input {
+  width: auto;
+}
+
+.contain-form .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+}
+
+.contain-form button {
+  width: 100%;
+}
+
+.contain-form button:last-child {
+  background-color: #04a0d94e;
 }

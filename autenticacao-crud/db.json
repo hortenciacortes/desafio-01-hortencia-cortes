@@ -4,7 +4,7 @@
       "name": "produto789",
       "manufacturingDate": "2022-10-01",
       "perishableProduct": false,
-      "expirationDate": "2022-10-08",
+      "expirationDate": "",
       "price": "R$ 23,443",
       "id": 1
     },
@@ -143,46 +143,6 @@
       "expirationDate": "",
       "price": "R$ 45,287",
       "id": 18
-    },
-    {
-      "name": "product1",
-      "manufacturingDate": "2022-10-06",
-      "perishableProduct": false,
-      "expirationDate": "",
-      "price": "R$ 45,287",
-      "id": 19
-    },
-    {
-      "name": "product1",
-      "manufacturingDate": "2022-10-06",
-      "perishableProduct": false,
-      "expirationDate": "",
-      "price": "R$ 45,287",
-      "id": 20
-    },
-    {
-      "name": "product1",
-      "manufacturingDate": "2022-10-06",
-      "perishableProduct": false,
-      "expirationDate": "",
-      "price": "R$ 45,287",
-      "id": 21
-    },
-    {
-      "name": "product1",
-      "manufacturingDate": "2022-10-06",
-      "perishableProduct": false,
-      "expirationDate": "",
-      "price": "R$ 45,287",
-      "id": 22
-    },
-    {
-      "name": "product1",
-      "manufacturingDate": "2022-10-06",
-      "perishableProduct": false,
-      "expirationDate": "",
-      "price": "R$ 45,287",
-      "id": 23
     }
   ]
 }

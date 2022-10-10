@@ -14,7 +14,7 @@
 
 ### 💻 Sobre o Projeto<a id="sobre-projeto"></a>
 
- 1. A página inicial do projeto em uma tela de login, porém  a autenticação não foi feita, ao apertar em entrar é enviado para a página com os produtos cadastrados.
+ 1. A página inicial do projeto é uma tela de login, com email e senha fixos para autenticação (email: admin@email.com; senha: admin), caso autenticado é gerado o token (que expira a cada 5 minutos) e enviado para a página com os produtos cadastrados, se não for autenticado, aparece um alerta que o usuário é inválido.
  2. A página mostra uma lista com todos os produtos cadastrados, possibilidade de ordenação dos campos de nome, data de fabricação, data de validade e produtos perecíveis e com uma paginação de 10 produtos por página.
  3. Na página de produtos, cada produto tem um ícone para editar e excluir e um botão para adicionar um novo produto contendo todos os campos solicitados (Nome; Data de fabricação; Produto perecível (booleano); Data de validade; Preço;)
  4. O botão 'cadastrar' leva até a página de cadastro
@@ -35,9 +35,13 @@
 *Backend - API*
 
     # Acesse a pasta (autenticacao-crud) no terminal
-	    json-server --watch db.json
+	    node server.js
     # O servidor iniciará na porta: 3000
-		Acesse http://localhost:3000/products
+			Para ter acesso as informações é necessário passar as informações de user e password pelo body
+			{
+				"user": "admin@email.com",
+				"password": "admin"
+			}
 
 *Web*
 
@@ -59,6 +63,7 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 - Redux
 - Axios
 - phosphor-react
+- jsonwebtoken
 
 ### 👧 Autora <a id="autora"></a>
 
